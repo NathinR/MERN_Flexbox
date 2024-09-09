@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exploring Website</title>
+  <link rel="icon" href="icon.jpeg">
+  <style>
+    *{
+      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+
+    header {
+      background-color: #288e23;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      
+    }
+
+    header h1{
+        text-align: center;
+        align-items: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #f2f2f2;
+      padding: 10px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    nav a {
+      color: #333;
+      text-decoration: none;
+      padding: 10px 20px;
+      margin: 0 10px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    nav a:hover {
+      background-color: rgb(14, 92, 14);
+      color: #fff;
+      border-radius: 10px;
+      transition: transform 0.5s, box-shadow 0.3s;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+
+    .card {
+  width: 300px;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(15, 115, 18, 0.2);
+  border-radius: 10px;
+  flex-wrap: wrap;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition effect */
+}
+
+.card:hover {
+  transform: translateY(-10px); /* Moves the card up */
+  box-shadow: 0 8px 16px rgba(13, 108, 10, 0.4); /* Increases shadow for the popup effect */
+}
+
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      transition: transform 0.3s, box-shadow 0.3s;
+      border-radius: 10px;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h3 {
+      margin-top: 0;
+    }
+
+    
+
+    /* footer {
+        
+      background-color: #288e23;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    } */
+
+    .container-four {
+  background-color: #288e23;
+  color: #f1f1f1;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.about-us, .keep-in-touch {
+  flex: 1 1 300px;
+  margin: 20px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+p {
+  line-height: 1.6;
+}
+
+address {
+  font-style: normal;
+  margin-top: 10px;
+}
+
+.social-links {
+  margin-top: 15px;
+}
+
+.social-links a {
+  color: #f1f1f1;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+label {
+  margin-bottom: 10px;
+}
+
+input[type="email"] {
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 300px;
+}
+
+input[type="submit"] {
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 500px;
+  max-width: 318px;
+  background-color:#d9d2cb;
+}
+
+.container-four input[type="submit"]:hover {
+  background-color: #15bcd5;
+  
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Exxplorrer</h1>
+    </header>
+    
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Destinations</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+    <br><br>
+    <main>
+      
+      <div class="card">
+        <img src="pollachi.jpeg" alt="Valparai">
+        <div class="card-content">
+          <h3>Valparai</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+
+      
+      <div class="card">
+        <img src="yercaud.jpeg" alt="Destination 2">
+        <div class="card-content">
+          <h3>Yercaud</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+      
+      <div class="card">
+        <img src="kodai.jpeg" alt="Destination 3">
+        <div class="card-content">
+          <h3>Kodaikanal</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+      
+      <div class="card">
+        <img src="dob.jpeg" alt="Destination 4">
+        <div class="card-content">
+          <h3>Doddabetta</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+
+    </main>
+    <br><br>
+    <main>
+      
+      <div class="card">
+        <img src="ooty.jpeg" alt="ooty">
+        <div class="card-content">
+          <h3>Ooty</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+
+      
+      <div class="card">
+        <img src="coonoor.jpeg" alt="coonoor">
+        <div class="card-content">
+          <h3>Coonoor</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+      
+      <div class="card">
+        <img src="mas.jpeg" alt="Masinagudi">
+        <div class="card-content">
+          <h3>Masinagudi</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+      
+      <div class="card">
+        <img src="wayanad.jpeg" alt="Wayanad">
+        <div class="card-content">
+          <h3>Wayanad</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+
+    </main>
+<br><br>
+
+
+    <footer class="container-four">
+      <div class="about-us">
+          <h2><b><u>About Us</u></b></h2>
+          <p>ExploreMore is a website dedicated to helping adventurers discover the world's hidden gems. Founded by a team of passionate travelers, our mission is to inspire responsible exploration and create a community of like-minded explorers. Through our engaging content, stunning photography, and practical travel tips, we empower you to uncover unique destinations and share your journey with others. Join us on this exciting adventure as we continue to grow and promote sustainable travel for all.</p>
+          <address>
+              <p>&#x1F4CD; Street Name, City</p>
+              <p>&#x260E; +12 321456 435675</p>
+              <p>&#x2709; <a href="mailto:support@exxplorer.com" target="_blank" style="color: #f1f1f1;">support@netflix.com</a></p>
+          </address>
+      </div>
+      <hr>
+      <div class="keep-in-touch" >
+          <h2><u>Keep in Touch</u></h2>
+          <form action="#" align="right">
+              <!-- <label for="email">E-mail</label> -->
+              <input type="email" id="email" required placeholder="E-mail" align="right">
+              <input type="submit" value="Submit">
+          </form>
+          <div class="social-links">
+              <a href="https://www.instagram.com/xplorer/" target="_blank">
+                  <i class="fab fa-xplorer"> Follow us on Instagram</i> 
+              </a>
+          </div>
+      </div>
+  </footer>
+  <footer align="center">
+    <p>&copy; 2023 Exploring Website. All rights reserved.</p>
+  </footer>
+  </div>
+</body>
+</html>
